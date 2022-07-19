@@ -1,0 +1,49 @@
+// COLORS
+$brand_color: #D41443;
+$bright_color: #FFFFFF;
+$paragraf_color: #000000;
+// background-color in menu mobile:
+$menu-mobile_color: #E17992;
+// color for ice-cream in 'gallery' and background in 'hero':
+$ice-cream_color: #FFB8CA;
+// ice coffe in 'gallery':
+$ice-coffe_color: #F0D1A5;
+// milkshakes in 'gallery':
+$milkshakes_color: #C2E297;
+// background-color in 'about' and 'advantages':
+$section-background_color: #FFF5F6;
+// elipse in 'hero', label titles in sections and time in 'contacts':
+$label_color: #FFA5BA;
+// social-media in 'footer':
+$social-media_color: #FEA5BB;
+// text in 'about', text and contact-links in 'contacts', copywrite in 'footer':
+$detail_color: #907E82;
+// hover for button in 'hero', dots in 'customer reviews':
+$hover-button_color: #C7133E;
+// button 'our location' in 'contacts':
+$button-location_color: #D41342;
+// icon home in 'customer reviews':
+$active-icon_color: #D31342;
+$elipse_color: #D9D9D9;
+// background-color in 'customer reviews':
+$reviews_color: #FAFAFA;
+// hover for buttons brights:
+$hover-button_color: #ECEBEB;
+
+// FONTS
+$brand_font: 'Titan One', cursive;
+$body_font: 'DM Sans', sans-serif;
+
+// FONT WEIGHT
+// 'about', 'customer reviews', 'contacts':
+$medium_weight: 500;
+// buttons, menu-mobile, 'products', 'advantages', 'footer':
+$bold_weight: 700;
+
+// BORDER RADIUS
+$circle: 50%;
+$body_button: 22px;
+$hero_button: 20px;
+$contact_part: 24px;
+$place_label: 6px;
+$place_label_mobile: 4px;
