@@ -1,38 +1,75 @@
 // COLORS
-$brand_color: #D41443;
-$bright_color: #FFFFFF;
+$brand_color: #d41443;
+$bright_color: #ffffff;
 $paragraf_color: #000000;
 // background-color in menu mobile:
-$menu-mobile_color: #E17992;
+$menu-mobile_color: #e17992;
 // color for ice-cream in 'gallery' and background in 'hero':
-$ice-cream_color: #FFB8CA;
+$ice-cream_color: #ffb8ca;
 // ice coffe in 'gallery':
-$ice-coffe_color: #F0D1A5;
+$ice-coffe_color: #f0d1a5;
 // milkshakes in 'gallery':
-$milkshakes_color: #C2E297;
+$milkshakes_color: #c2e297;
 // background-color in 'about' and 'advantages':
-$section-background_color: #FFF5F6;
+$section-background_color: #fff5f6;
 // elipse in 'hero', label titles in sections and time in 'contacts':
-$label_color: #FFA5BA;
+$label_color: #ffa5ba;
 // social-media in 'footer':
-$social-media_color: #FEA5BB;
+$social-media_color: #fea5bb;
 // text in 'about', text and contact-links in 'contacts', copywrite in 'footer':
-$detail_color: #907E82;
+$detail_color: #907e82;
 // hover for button in 'hero', dots in 'customer reviews':
-$hover-button_color: #C7133E;
+$hover-button_color: #c7133e;
 // button 'our location' in 'contacts':
-$button-location_color: #D41342;
+$button-location_color: #d41342;
 // icon home in 'customer reviews':
-$active-icon_color: #D31342;
-$elipse_color: #D9D9D9;
+$active-icon_color: #d31342;
+$elipse_color: #d9d9d9;
 // background-color in 'customer reviews':
-$reviews_color: #FAFAFA;
+$reviews_color: #fafafa;
 // hover for buttons brights:
-$hover-button_color: #ECEBEB;
+$hover-button_color: #ecebeb;
 
 // FONTS
 $brand_font: 'Titan One', cursive;
 $body_font: 'DM Sans', sans-serif;
+
+.sectionH1Font {
+  margin: 0;
+  font-family: 'Titan One';
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 34px;
+  text-align: center;
+  line-height: 1.15;
+  color: $brand_color;
+}
+
+.sectionH2Font {
+  @extend .sectionH1Font;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: $label_color;
+}
+
+.buttonFont {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $brand_color;
+}
+
+.button {
+  @extend .buttonFont;
+  padding-left: 37px;
+  padding-right: 37px;
+  background-color: $bright_color;
+  border-radius: 22px;
+  border: 0px;
+  height: 44px;
+  cursor: pointer;
+}
 
 // FONT WEIGHT
 // 'about', 'customer reviews', 'contacts':
