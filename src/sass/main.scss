@@ -6,5 +6,8 @@
 // Style dla pliku z przykładem HTML fragmentu
 @import './example';
 
-@import "./utils/variables";
-@import "./layout/gallery";
+@import './base/common';
+@import './base/container';
+@import './base/section';
+
+@import './utils/variables';

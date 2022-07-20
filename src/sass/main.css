@@ -29,11 +29,41 @@
   background-position: center;
 }
 
-.gallery {
-  background-image: linear-gradient(to bottom, #ffb8ca 40%, #ffffff 40%);
-  max-width: 1280px;
-  min-height: 122px;
+body {
+  font-size: 14px;
 }
-.gallery__image {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.container {
   width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-width: 320px;
+  max-width: 1200px;
 }/*# sourceMappingURL=main.css.map */
