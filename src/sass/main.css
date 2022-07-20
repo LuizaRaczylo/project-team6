@@ -27,4 +27,13 @@
   background-image: url("../images/demo.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.gallery {
+  background-image: linear-gradient(to bottom, #ffb8ca 40%, #ffffff 40%);
+  max-width: 1280px;
+  min-height: 122px;
+}
+.gallery__image {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
