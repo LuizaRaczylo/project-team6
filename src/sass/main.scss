@@ -4,11 +4,12 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
-@import './example';
-
 @import './base/common';
 @import './base/container';
 @import './base/section';
+@import './layout/gallery';
+
+@import './components/hero-header';
 
 @import './utils/variables';
 @import './sass/contacts';
