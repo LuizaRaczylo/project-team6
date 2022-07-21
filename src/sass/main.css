@@ -42,7 +42,6 @@ img {
   max-width: 1200px;
 }
 
-
 .gallery {
   background-image: linear-gradient(to bottom, #ffb8ca 40%, #ffffff 40%);
   max-width: 1280px;
@@ -50,6 +49,7 @@ img {
 }
 .gallery__image {
   width: 100%;
+}
 
 .hero-header {
   height: 502px;
@@ -98,5 +98,4 @@ img {
   color: #d41443;
   background-color: white;
   margin-left: 10px;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
