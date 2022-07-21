@@ -8,6 +8,10 @@
     text-align: center;
     line-height: 1.15;
     color: $brand_color;
+    
+      &--products {
+        padding-bottom: 113px;
+      }
   }
 
   &__subtitle {
