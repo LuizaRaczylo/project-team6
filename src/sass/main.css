@@ -98,4 +98,8 @@ img {
   color: #d41443;
   background-color: white;
   margin-left: 10px;
+}
+
+.contacts__hidden-header {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
