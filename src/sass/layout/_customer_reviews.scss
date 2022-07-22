@@ -1,23 +1,14 @@
 /* Slideshow container */
 .slideshow-container {
-    max-width: 85px;
     margin: auto;
   }
-  
+  .customer-reviews__picture {
+    margin-top: 80px;
+    margin-bottom: 29px;
+  }
   /* Hide the images by default */
   .mySlides {
     display: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
   }
   
   /* Caption text */
@@ -27,6 +18,7 @@
     padding: 8px 12px;
     width: 100%;
     text-align: center;
+    background-color: #FAFAFA;
   }
   
   

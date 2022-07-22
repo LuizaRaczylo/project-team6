@@ -1,6 +1,10 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
+document.getElementById('dot1').addEventListener('click',() => currentSlide(1))
+document.getElementById('dot2').addEventListener('click',() => currentSlide(2))
+document.getElementById('dot3').addEventListener('click',() => currentSlide(3))
+
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
