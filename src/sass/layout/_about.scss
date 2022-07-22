@@ -1,0 +1,35 @@
+.about {
+  padding-top: 125px;
+  background-color: $section-background_color;
+
+  &__header {
+    margin: 0;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 162%;
+    font-size: 12px;
+    color: $paragraf_color;
+    margin-bottom: 47px;
+  }
+
+  &__description {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+    color: $detail_color;
+    margin-bottom: 17px;
+  }
+
+  &__img {
+    margin-top: 26px;
+    margin-bottom: 46px;
+  }
+
+  &__container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
