@@ -1,6 +1,17 @@
 .about {
   padding-top: 125px;
   background-color: $section-background_color;
+  background-image: url('../images/milk_bg_left.png'), url('../images/milk_bg_right.png');
+  background-size: auto 108px;
+  background-repeat: no-repeat;
+  background-position: left bottom 75px, right bottom 75px;
+  &__title {
+    @extend .section__title;
+  }
+
+  &__subtitle {
+    @extend .section__subtitle;
+  }
 
   &__header {
     margin: 0;
@@ -23,13 +34,152 @@
     margin-bottom: 17px;
   }
 
-  &__img {
+  &__img-mobile {
     margin-top: 26px;
     margin-bottom: 46px;
+  }
+
+  &__img-tablet {
+    display: none;
+  }
+
+  &__img-desktop {
+    display: none;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__button_icon {
+    margin-left: 15px;
   }
 
   &__container {
     padding-left: 30px;
     padding-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .about {
+    background-image: none;
+    padding-top: 130px;
+
+    &__title {
+      font-size: 48px;
+      margin-bottom: 100px;
+    }
+
+    &__subtitle {
+      font-size: 26px;
+      margin-bottom: 16px;
+    }
+
+    &__header {
+      font-size: 14px;
+      line-height: 176%;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 176%;
+      letter-spacing: 0.04em;
+      margin-bottom: 62px;
+    }
+
+    &__container {
+      display: flex;
+      justify-content: center;
+    }
+    &__img-mobile {
+      display: none;
+    }
+    &__img-tablet {
+      margin-top: -50px;
+      margin-right: 17px;
+      display: block;
+      min-width: 340px;
+      flex-basis: calc(100% / 2);
+    }
+
+    &__text {
+      flex-basis: calc(100% / 2);
+      min-width: 340px;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .about {
+    background-image: url('../images/milk_bg_left@x2.png'), url('../images/milk_bg_right@x2.png');
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-top: 125px;
+    background-image: url('../images/milk_bg_desktop_left.png'),
+      url('../images/milk_bg_desktop_right.png');
+    background-size: auto 433px;
+
+    &__img-mobile {
+      display: none;
+    }
+
+    &__container {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__title {
+      font-size: 58px;
+      margin-bottom: 106px;
+    }
+
+    &__subtitle {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    &__header {
+      letter-spacing: 0.04em;
+      font-size: 16px;
+      margin-bottom: 35px;
+    }
+
+    &__description {
+      font-size: 16px;
+      margin-bottom: 45px;
+    }
+
+    &__text {
+      flex-basis: calc(100% / 2);
+      min-width: 463px;
+      margin-right: 117px;
+    }
+
+    &__img-tablet {
+      display: none;
+    }
+    &__img-desktop {
+      margin-top: -47px;
+      margin-right: 74px;
+      display: block;
+      min-width: 516px;
+      flex-basis: calc(100% / 2);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .about {
+    background-image: url('../images/milk_bg_desktop_left@x2.png'),
+      url('../images/milk_bg_desktop_right@x2.png');
   }
 }
