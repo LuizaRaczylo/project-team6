@@ -1,6 +1,6 @@
 .hero-header {
   height: 502px;
-  background-color: #ffb8ca;
+  background-color: $ice-cream_color;
 
   &__heading {
     display: flex;
@@ -15,24 +15,34 @@
     cursor: pointer;
   }
 
+  &__content-container {
+    position: absolute;
+    z-index: 2;
+  }
+
   &__title {
+    font-family: $brand_font;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 30px;
     font-size: 26px;
-    color: #ffff;
+    color: $bright_color;
     margin-top: 137px;
 
     &--big {
+      line-height: 46px;
       font-size: 48px;
-      color: #d41443;
+      color: $brand_color;
     }
   }
 
   &__buttons-container {
-    display: flex;
-    justify-content: flex-start;
-    padding: 19px 0 0 20px;
+    padding-top: 19px;
+    z-index: 2;
   }
 
   &__button {
+    font-family: $body_font;
     font-size: 8px;
     border-radius: 20px;
     height: 24px;
@@ -43,14 +53,30 @@
     &--pink-theme {
       width: 62px;
       color: #ffff;
-      background-color: #d41443;
+      background-color: $brand_color;
     }
 
     &--white-theme {
       width: 82px;
-      color: #d41443;
-      background-color: #ffff;
+      color: $brand_color;
+      background-color: $bright_color;
       margin-left: 10px;
     }
+  }
+
+  &__ice-cream-container {
+    position: absolute;
+    background-color: $label_color;
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    z-index: 1;
+    margin-top: 27px;
+  }
+
+  &__ice-cream-image {
+    display: block;
+    margin: 0 auto;
+    padding-top: 9px;
   }
 }
