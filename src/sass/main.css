@@ -3,6 +3,41 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
+.sectionH1Font, .sectionH2Font {
+  margin: 0;
+  font-family: "Titan One";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 34px;
+  text-align: center;
+  line-height: 1.15;
+  color: #d41443;
+}
+
+.sectionH2Font {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #ffa5ba;
+}
+
+.buttonFont, .button {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #d41443;
+}
+
+.button {
+  padding-left: 37px;
+  padding-right: 37px;
+  background-color: #ffffff;
+  border-radius: 22px;
+  border: 0px;
+  height: 44px;
+  cursor: pointer;
+}
+
 body {
   font-size: 14px;
 }
@@ -21,6 +56,7 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 p {
@@ -42,6 +78,25 @@ img {
   max-width: 1200px;
 }
 
+.section__title, .section__subtitle {
+  margin: 0;
+  font-family: "Titan One";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 34px;
+  text-align: center;
+  line-height: 1.15;
+  color: #d41443;
+}
+.section__title--products {
+  padding-bottom: 113px;
+}
+.section__subtitle {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #ffa5ba;
+}
+
 .gallery {
   background-image: linear-gradient(to bottom, #ffb8ca 40%, #ffffff 40%);
   max-width: 1280px;
@@ -53,7 +108,7 @@ img {
 
 .hero-header {
   height: 502px;
-  background-color: #FFB8CA;
+  background-color: #ffb8ca;
 }
 .hero-header__heading {
   display: flex;
@@ -76,13 +131,13 @@ img {
   letter-spacing: 0.04em;
   line-height: 30px;
   font-size: 26px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 137px;
 }
 .hero-header__title--big {
   line-height: 46px;
   font-size: 48px;
-  color: #D41443;
+  color: #d41443;
 }
 .hero-header__buttons-container {
   padding-top: 19px;
@@ -100,17 +155,17 @@ img {
 .hero-header__button--pink-theme {
   width: 62px;
   color: white;
-  background-color: #D41443;
+  background-color: #d41443;
 }
 .hero-header__button--white-theme {
   width: 82px;
-  color: #D41443;
-  background-color: #FFFFFF;
+  color: #d41443;
+  background-color: #ffffff;
   margin-left: 10px;
 }
 .hero-header__ice-cream-container {
   position: absolute;
-  background-color: #FFA5BA;
+  background-color: #ffa5ba;
   width: 346px;
   height: 344px;
   border-radius: 50%;
@@ -121,4 +176,62 @@ img {
   display: block;
   margin: 0 auto;
   padding-top: 9px;
+}
+
+.mobile-menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e17992;
+  z-index: 999;
+  padding: 60px 21px 0 21px;
+  transform: translateX(100%);
+}
+.mobile-menu-container.is-open {
+  transform: translateX(0);
+}
+.mobile-menu-container__close-btn {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  position: absolute;
+  top: 23px;
+  right: 28px;
+}
+.mobile-menu-container__close-btn:active, .mobile-menu-container__close-btn:focus, .mobile-menu-container__close-btn:hover {
+  fill: var(--brand-main-color);
+}
+.mobile-menu-container__list {
+  list-style-type: none;
+  margin-top: 19px;
+}
+.mobile-menu-container__item {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 13px;
+  border-top: 1px solid #e18298;
+  border-bottom: 1px solid #e18298;
+}
+
+.buy-now-button {
+  font-family: "DM Sans", sans-serif;
+  color: #d41443;
+  background-color: #ffffff;
+  font-size: 16px;
+  border-radius: 22px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 44px;
 }/*# sourceMappingURL=main.css.map */
