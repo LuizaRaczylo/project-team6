@@ -14,4 +14,8 @@
     line-height: 1.29;
     color: $brand_color;
   }
+
+  &:hover {
+    background-color: $hover-button_color;
+  }
 }
