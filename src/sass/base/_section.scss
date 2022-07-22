@@ -1,2 +1,24 @@
-.section {
+  .section {
+  &__title {
+    margin: 0;
+    font-family: 'Titan One';
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 34px;
+    text-align: center;
+    line-height: 1.15;
+    color: $brand_color;
+    
+      &--products {
+        padding-bottom: 113px;
+      }
+  }
+
+  &__subtitle {
+    @extend .section__title;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: $label_color;
+  }
 }
+

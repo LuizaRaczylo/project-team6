@@ -4,10 +4,16 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+@import './utils/variables';
 @import './base/common';
 @import './base/container';
 @import './base/section';
 @import './layout/gallery';
 @import './layout/customer_reviews';
 
-@import './utils/variables';
+@import './components/hero-header';
+@import './layout/products';
+
+
+@import './layout/contacts';
+
