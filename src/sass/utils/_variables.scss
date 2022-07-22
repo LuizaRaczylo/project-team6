@@ -34,43 +34,6 @@ $hover-button_color: #ecebeb;
 $brand_font: 'Titan One', cursive;
 $body_font: 'DM Sans', sans-serif;
 
-.sectionH1Font {
-  margin: 0;
-  font-family: 'Titan One';
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 34px;
-  text-align: center;
-  line-height: 1.15;
-  color: $brand_color;
-}
-
-.sectionH2Font {
-  @extend .sectionH1Font;
-  margin-bottom: 15px;
-  font-size: 18px;
-  color: $label_color;
-}
-
-.buttonFont {
-  font-family: 'DM Sans';
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.29;
-  color: $brand_color;
-}
-
-.button {
-  @extend .buttonFont;
-  padding-left: 37px;
-  padding-right: 37px;
-  background-color: $bright_color;
-  border-radius: 22px;
-  border: 0px;
-  height: 44px;
-  cursor: pointer;
-}
-
 // FONT WEIGHT
 // 'about', 'customer reviews', 'contacts':
 $medium_weight: 500;

@@ -1,15 +1,19 @@
 <div class="about">
   <div class="container">
-    <h2 class="sectionH2Font">tradition and love</h2>
-    <h1 class="sectionH1Font">how it’s made?</h1>
+    <h2 class="section__subtitle about__subtitle">tradition and love</h2>
+    <h1 class="about__title">how it’s made?</h1>
 
     <div class="about__container">
-      <div class="about__img">
-        <img
-          class="what-are-we-doing__img"
-          src="../images/about_cow_280x279.png"
-          alt="Cow with milk"
-        />
+      <div class="about__img-mobile">
+        <img src="./images/about_cow_280x279.png" alt="Cow with milk" />
+      </div>
+
+      <div class="about__img-tablet">
+        <img src="./images/about_cow_340x339.png" width="340px" alt="Cow with milk" />
+      </div>
+
+      <div class="about__img-desktop">
+        <img src="./images/about_cow_516x516.png" width="516px" alt="Cow with milk" />
       </div>
 
       <div class="about__text">
@@ -24,7 +28,26 @@
           <br />
           <br />Aliquam erat volutpat. Aenean accumsan.
         </p>
-        <button class="button about__button">Read more</button>
+
+        <button class="button about__button">
+          <p class="button__font">Read more</p>
+          <svg
+            class="about__button_icon"
+            width="8"
+            height="10"
+            viewBox="0 0 8 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.61633 1L6.04401 5L1.61633 9"
+              stroke="#D41443"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
       </div>
     </div>
   </div>
