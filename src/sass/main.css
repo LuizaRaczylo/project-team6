@@ -21,6 +21,8 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 p {
@@ -102,4 +104,40 @@ img {
 
 .contacts__hidden-header {
   display: none;
+}
+
+.contacts {
+  background-color: #FFF5F6;
+  display: grid;
+  row-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  margin: 0 auto;
+}
+
+.contacts-container--one {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.contacts-container--two {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.contacts-container--three {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.contacts-container {
+  background-color: #FFFFFF;
+  width: 100%;
+  padding-top: 84px;
+  padding-left: 20px;
+  padding-right: 21px;
+  padding-bottom: 43px;
+}
+
+.contacts-header__undertitle {
+  max-width: 179px;
 }/*# sourceMappingURL=main.css.map */
