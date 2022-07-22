@@ -16,8 +16,13 @@
   }
 
   &__title {
+    font-family: $brand_font;
     font-size: 26px;
+    font-weight: 400;
     color: #ffff;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    line-height: 1.15;
     margin-top: 137px;
 
     &--big {
