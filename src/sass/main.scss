@@ -9,8 +9,14 @@
 @import './base/common';
 @import './base/container';
 @import './base/section';
+
+@import './layout/products';
+@import './layout/about';
 @import './layout/gallery';
+@import './layout/customer_reviews';
+@import './layout/contacts';
 
 @import './components/hero-header';
 @import './components/mobile-menu-container';
+@import './components/button';
 @import './components/buy-now-button';
