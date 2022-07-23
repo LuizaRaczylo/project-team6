@@ -1,3 +1,58 @@
 .contacts__hidden-header {
-    display: none;
+   display: none;
+}
+
+.section-contacts {
+   background-color: $section-background_color;
+}
+
+.contacts-container {
+   background-color: $bright_color;
+   width: 100%;
+   padding: 43px 21px 43px 21px;
+   border-radius: 24px;
+  box-shadow: 0px 8px rgba(212, 20, 67, 0.1);
+}
+
+.contacts-container:not(:last-child)  {
+   margin-bottom: 20px;
+}
+
+.contacts-header__title {
+   font-family: 'DM Sans';
+   font-weight: $medium_weight;
+   font-size: 12px;
+   line-height: 1.86;
+   color: $bright_color;
+   padding-left: 30px;
+   padding-right: 30px;
+   }
+
+   .contacts-header__title--bg-cafe {
+      background-color: $ice-coffe_color;
+      border-radius: 4px;
+   }
+
+   .contacts-header__title--bg-foodtruck {
+      background-color: $milkshakes_color;
+      border-radius: 4px;
+   }
+
+.contacts-header__main-title {
+   font-family: 'DM Sans';
+   font-weight: $medium_weight;
+   font-size: 12px;
+   line-height: 1.86;
+   margin-top: 25px;
+   margin-bottom: 10px;
+}
+
+.contacts-header__undertitle {
+   font-family: 'DM Sans';
+   font-weight: $medium_weight;
+   font-size: 12px;
+   line-height: 1.5;
+   color: $detail_color;
+   max-width: 179px;
+   margin-bottom: 25px;
 }
