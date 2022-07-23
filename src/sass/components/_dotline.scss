@@ -1,0 +1,36 @@
+.dotline {
+    display: block;
+    border-radius: 50%;
+    margin: 30px auto 18px auto;
+    position: relative;
+        &--products {
+            width: 6px;
+            height: 6px;
+            color: $bright_color;
+        }
+        &--customer_reviews {
+            width: 4px;
+            height: 4px;
+            color: #c7133e;
+        }
+
+    &--products,
+    &--customer_reviews {
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 10px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 10px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+    }
+}
