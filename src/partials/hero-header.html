@@ -2,21 +2,30 @@
   <!------------ H E A D I N G ---------->
   <div class="hero-header__heading container">
     <div class="hero-header__logo"><img src="images/hero-header/mobile/logo@1x.png" /></div>
-    <div class="hero-header__burger">
-      <button
-        class="hero-header__burger-button menu-toggle js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg class="" width="20" height="12">
-          <use href="/images/icons-hero-header.svg#icon-burger"></use>
-        </svg>
-      </button>
+    <div class="hero-header__heading__buttons">
+     <div class="hero-header__burger">
+       <button
+         class="hero-header__burger-button menu-toggle js-open-menu"
+         aria-expanded="false"
+         aria-controls="mobile-menu"
+       >
+         <svg class="" width="20" height="12">
+           <use href="/images/icons-hero-header.svg#icon-burger"></use>
+         </svg>
+       </button>
+     </div>
+     <button class="buy-now-button buy-now-button--hidden">
+       Buy now<svg class="buy-now-button__icon" width="10" height="10">
+         <use href="/images/icons-hero-header.svg#icon-arrow-button"></use>
+       </svg>
+     </button>
     </div>
   </div>
 
-  <!------------ T I T L E ---------->
-  <div class="hero-header__content-container container">
+ 
+  <div class="hero-header__content-container">
+    <div class="hero-header__first-content-container">
+    <!------------ T I T L E ---------->
     <h1 class="hero-header__title">
       ICE CREAM<br />
       MADE WITH<br /><span class="hero-header__title--big">PASSION</span>
@@ -26,29 +35,52 @@
       <button class="hero-header__button hero-header__button--pink-theme">Products</button>
       <button class="hero-header__button hero-header__button--white-theme">How it's made?</button>
     </div>
+    <div class="hero-header__milk-container">
+      <img src="/images/hero-header/tablet/milk-tablet@1x.png" alt="bio eco milk">
+      <p class="hero-header__milk-post">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        <img class="hero-header__milk-arrow-img" src="/images/hero-header/tablet/arrow-right-tablet@1x.png" alt="">
+      </p>
+    </div>
   </div>
-  <!------------ B A C K G R O U N D
+  <div class="hero-header__second-content-container">
+    <p class="hero-header__numbers">16</p>
+    <p class="hero-header__numbers-text">cafes</p>
+    <p class="hero-header__numbers">23</p>
+    <p class="hero-header__numbers-text">food trucks</p>
+    <img class="hero-header__girl-img" src="/images/hero-header/tablet/girl-tablet@1x.png"></div>
+  </div>
+</div>
+
+  <!------------ B A C K G R O U N D   
   <div class="hero-header__ice-cream-container">
     <img
       class="hero-header__ice-cream-image"
       src="images/hero-header/mobile/slider_ice_cream-mobile@1x.png"
     />
   </div>
+  ---------->
+ 
+  
 </header>
 
 <!------------ M O B I L E  M E N U ---------->
-<div class="mobile-menu-container js-menu-container" id="mobile-menu">
-  <button class="js-close-menu mobile-menu-container__close-btn">
-    <svg class=" " width="14" height="14">
-      <use href="/images/icons-hero-header.svg#icon-close"></use>
-    </svg>
-  </button>
-  <button class="buy-now-button">Buy now</button>
-  <ul class="mobile-menu-container__list">
-    <li class="mobile-menu-container__item">Home</li>
-    <li class="mobile-menu-container__item">About us</li>
-    <li class="mobile-menu-container__item">How it's made?</li>
-    <li class="mobile-menu-container__item">Our products</li>
-    <li class="mobile-menu-container__item">Contact</li>
-  </ul>
-</div>
+  <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+    <button class="js-close-menu mobile-menu-container__close-btn">
+      <svg class=" " width="14" height="14">
+        <use href="/images/icons-hero-header.svg#icon-close"></use>
+      </svg>
+    </button>
+    <button class="buy-now-button">
+      Buy now<svg class="buy-now-button__icon" width="10" height="10">
+        <use href="/images/icons-hero-header.svg#icon-arrow-button"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu-container__list">
+      <li class="mobile-menu-container__item">Home</li>
+      <li class="mobile-menu-container__item">About us</li>
+      <li class="mobile-menu-container__item">How it's made?</li>
+      <li class="mobile-menu-container__item">Our products</li>
+      <li class="mobile-menu-container__item">Contact</li>
+    </ul>
+  </div>
+</header>
