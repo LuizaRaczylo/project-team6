@@ -3,24 +3,71 @@
     margin: auto;
   }
   .customer-reviews__picture {
-    margin-top: 80px;
-    margin-bottom: 29px;
+    width: 85px;
+    margin: 80px auto 29px auto;
   }
   /* Hide the images by default */
   .mySlides {
     display: none;
   }
-  
-  /* Caption text */
-  .text {
-    color: #000;
-    font-size: 15px;
-    padding: 8px 12px;
-    width: 100%;
-    text-align: center;
+  .customer-reviews__box {
     background-color: #FAFAFA;
+    width: 100%;
+    padding: 43px 50px 20px;
+    position: relative;
   }
-  
+  .customer-reviews__icon {
+    width: 54px;
+    height: 40px;
+    position: absolute;
+    top: 28px;
+    left: 61px;
+  }
+  /* Caption text */
+  .customer-reviews__text {
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2.58;
+    position: relative;
+    text-align: center;
+    
+    background-image: repeating-linear-gradient(0deg,#e1e1e1 0,#e1e1e1 1px,transparent 0,transparent 36px);
+  }
+  .customer-reviews__dotline {
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #c7133e;
+    margin: 30px auto 18px auto;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 10px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #c7133e;
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 10px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #c7133e;
+    }
+  }
+  .customer-reviews__name {
+    margin-top: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
   
   /* The dots/bullets/indicators */
   .dot {
