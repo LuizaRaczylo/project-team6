@@ -10,14 +10,16 @@
 @import './base/container';
 @import './base/section';
 
+@import './components/hero-header';
+@import './components/mobile-menu-container';
+@import './components/button';
+@import './components/buy-now-button';
+@import './components/dotline';
+
 @import './layout/products';
 @import './layout/about';
 @import './layout/advantages';
 @import './layout/gallery';
 @import './layout/customer_reviews';
 @import './layout/contacts';
-
-@import './components/hero-header';
-@import './components/mobile-menu-container';
-@import './components/button';
-@import './components/buy-now-button';
+@import './layout/footer';

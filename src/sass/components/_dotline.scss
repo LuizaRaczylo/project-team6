@@ -3,16 +3,6 @@
     border-radius: 50%;
     margin: 30px auto 18px auto;
     position: relative;
-        &--products {
-            width: 6px;
-            height: 6px;
-            color: $bright_color;
-        }
-        &--customer_reviews {
-            width: 4px;
-            height: 4px;
-            color: #c7133e;
-        }
 
     &--products,
     &--customer_reviews {
