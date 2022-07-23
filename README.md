@@ -14,7 +14,7 @@ npm ci
 
 ### Praca
 
-Włączyć tryp pracy.
+Włączyć tryb pracy.
 
 ```shell
 npm run dev
@@ -25,7 +25,7 @@ W przeglądarce przejść na [http://localhost:1234](http://localhost:1234).
 ### Deploy
 
 Kod będzie automatycznie się zbierać i robić deploy aktualnej wersji projektu 
-na GitHub Pages, w gałąź `gh-pages`, za kazdym razem jeśli zostaną wprowadzone zmiany w `main`. Na przykład, po bezpośrenim push lub po przyjęciu pull-request. Aby to działało musimy w pliku `package.json` zmienić pole `homepage` i skrypt
+na GitHub Pages, w gałęzi `gh-pages`, za kazdym razem jeśli zostaną wprowadzone zmiany w `main`. Na przykład, po bezpośrenim push lub po przyjęciu pull-request. Aby to działało musimy w pliku `package.json` zmienić pole `homepage` i skrypt
 `build`, zmieniając `nazwe_uzytkownika` i `nazwe_repozytorium` na swoje.
 
 ```json
@@ -35,7 +35,7 @@ na GitHub Pages, w gałąź `gh-pages`, za kazdym razem jeśli zostaną wprowadz
 },
 ```
 
-Po jakimś czasie stronę mozna będzie zobaczyć na zywo pod adresem który 
+Po jakimś czasie stronę mozna będzie zobaczyć na żywo pod adresem, który 
 jest wpisany w poprawione właściwości `homepage`, na przykład
 [https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
 
