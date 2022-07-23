@@ -30,7 +30,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
     }
     &__label {
         font-family: $brand_font;
@@ -42,7 +42,6 @@
         letter-spacing: 0.04em;
         line-height: 1.15;
         margin-top: 30px;
-        margin-bottom: 30px;
     }
     &__text {
         font-family: $body_font;
