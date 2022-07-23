@@ -1,1 +1,54 @@
-<header class="hero-header"></header>
+<header class="hero-header">
+  <!------------ H E A D I N G ---------->
+  <div class="hero-header__heading container">
+    <div class="hero-header__logo"><img src="images/hero-header/mobile/logo@1x.png" /></div>
+    <div class="hero-header__burger">
+      <button
+        class="hero-header__burger-button menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="" width="20" height="12">
+          <use href="/images/icons-hero-header.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!------------ T I T L E ---------->
+  <div class="hero-header__content-container container">
+    <h1 class="hero-header__title">
+      ICE CREAM<br />
+      MADE WITH<br /><span class="hero-header__title--big">PASSION</span>
+    </h1>
+    <!------------ B U T T O N S ---------->
+    <div class="hero-header__buttons-container">
+      <button class="hero-header__button hero-header__button--pink-theme">Products</button>
+      <button class="hero-header__button hero-header__button--white-theme">How it's made?</button>
+    </div>
+  </div>
+  <!------------ B A C K G R O U N D
+  <div class="hero-header__ice-cream-container">
+    <img
+      class="hero-header__ice-cream-image"
+      src="images/hero-header/mobile/slider_ice_cream-mobile@1x.png"
+    />
+  </div>
+</header>
+
+<!------------ M O B I L E  M E N U ---------->
+<div class="mobile-menu-container js-menu-container" id="mobile-menu">
+  <button class="js-close-menu mobile-menu-container__close-btn">
+    <svg class=" " width="14" height="14">
+      <use href="/images/icons-hero-header.svg#icon-close"></use>
+    </svg>
+  </button>
+  <button class="buy-now-button">Buy now</button>
+  <ul class="mobile-menu-container__list">
+    <li class="mobile-menu-container__item">Home</li>
+    <li class="mobile-menu-container__item">About us</li>
+    <li class="mobile-menu-container__item">How it's made?</li>
+    <li class="mobile-menu-container__item">Our products</li>
+    <li class="mobile-menu-container__item">Contact</li>
+  </ul>
+</div>
