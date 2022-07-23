@@ -7,6 +7,11 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 6px;
+
+    &__buttons {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__burger-button {
@@ -16,8 +21,12 @@
   }
 
   &__content-container {
-    position: absolute;
-    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__first-content-container {
+    margin-left: 20px;
   }
 
   &__title {
@@ -27,7 +36,7 @@
     line-height: 30px;
     font-size: 26px;
     color: $bright_color;
-    margin-top: 137px;
+    width: 218px;
 
     &--big {
       line-height: 46px;
@@ -39,6 +48,7 @@
   &__buttons-container {
     padding-top: 19px;
     z-index: 2;
+    padding-left: 0;
   }
 
   &__button {
@@ -64,12 +74,16 @@
     }
   }
 
+  &__milk-container {
+    display: none;
+  }
+
   &__ice-cream-container {
     position: absolute;
     background-color: $label_color;
     width: 346px;
     height: 344px;
-    border-radius: 50%;
+    border-radius: $circle;
     z-index: 1;
     margin-top: 27px;
   }
@@ -79,4 +93,120 @@
     margin: 0 auto;
     padding-top: 9px;
   }
+
+  &__girl-img {
+    display: none;
+  }
+
+  &__numbers {
+    display: none;
+  }
+
+  &__numbers-text {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-header {
+    height: 399px;
+
+    z-index: 2;
+
+    &__heading {
+      padding: 37px 34px 0 34px;
+    }
+
+    &__burger-button {
+      margin-right: 30px;
+    }
+
+    &__first-content-container {
+      margin: 15px 0 0 34px;
+    }
+
+    &__title {
+      margin-top: 0px;
+      font-size: 22px;
+      line-height: 25px;
+      letter-spacing: 0.04em;
+
+      &--big {
+        font-size: 34px;
+        line-height: 31px;
+      }
+    }
+
+    &__milk-container {
+      display: flex;
+      padding-top: 15px;
+    }
+
+    &__milk-post {
+      font-family: $body_font;
+      color: $bright_color;
+      font-size: 8px;
+      line-height: 150%;
+      font-weight: 400;
+      width: 114px;
+      margin-top: 51px;
+    }
+
+    &__milk-arrow-img {
+      margin-top: 7px;
+    }
+
+    &__ice-cream-container {
+      margin-left: 307px;
+    }
+
+    &__second-content-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: 12px;
+      margin-right: 34px;
+    }
+
+    &__numbers {
+      position: relative;
+      z-index: 2;
+      display: inline;
+      font-size: 28px;
+      font-family: $brand_font;
+      color: $brand_color;
+      margin-right: 10px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        left: 25px;
+        top: -1px;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border-radius: $circle;
+        background-color: $bright_color;
+      }
+    }
+
+    &__numbers-text {
+      display: inline;
+      font-size: 8px;
+      font-family: $body_font;
+      color: $bright_color;
+      line-height: 10px;
+      margin-bottom: 14px;
+      margin-right: 10px;
+    }
+
+    &__girl-img {
+      display: inline;
+      margin-top: 55px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
 }
