@@ -10,11 +10,27 @@
         margin-bottom: 15px;
     }
     &__item {
+        height: 598px;
+        position: relative;
+        padding-top: 113px;
+    }
+    &__pic {
+        position: absolute;
+        top: -113px;
+    }
+    &__area {
         width: 100%;
-        max-height: 485px;
+        height: 485px;
         background-color: $ice-cream_color;
         border-radius: $contact_part;
         margin-bottom: 17px;
+        display: flex;
+    }
+    &__about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
     }
     &__label {
         font-family: $brand_font;
@@ -25,6 +41,8 @@
         text-align: center;
         letter-spacing: 0.04em;
         line-height: 1.15;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
     &__text {
         font-family: $body_font;
@@ -33,5 +51,6 @@
         color: $bright_color;
         text-align: center;
         letter-spacing: 0.04em;
+        padding: 0 44px;
     }
 }
