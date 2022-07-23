@@ -1,3 +1,128 @@
 .contacts__hidden-header {
-    display: none;
+   display: none;
+}
+
+.section-contacts {
+   background-color: $section-background_color;
+}
+
+.contacts-container {
+   background-color: $bright_color;
+   width: 100%;
+   padding: 43px 21px 43px 21px;
+   border-radius: 24px;
+   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+      &:not(:last-child)  {
+         margin-bottom: 20px;
+      }
+}
+
+.fonts {
+   font-family: 'DM Sans';
+   font-weight: $medium_weight;
+   font-size: 12px;
+   line-height: 1.86;
+}
+
+.contacts-header__title {
+   @extend .fonts;
+   color: $bright_color;
+   padding-left: 30px;
+   padding-right: 30px;
+
+      &--bg-cafe {
+      background-color: $ice-coffe_color;
+      border-radius: 4px;
+      }
+
+      &--bg-foodtruck {
+      background-color: $milkshakes_color;
+      border-radius: 4px;
+      }
+   }
+
+   .contacts-header__main-title {
+      @extend .fonts;
+      margin-top: 25px;
+      margin-bottom: 10px;
+   }
+   
+   .contacts-availability__day {
+      @extend .fonts;
+   }
+
+   .contacts-availability__time {
+      @extend .fonts;
+      color: $label_color;
+
+      &:not(:last-child)  {
+         margin-bottom: 10px;
+      }
+   }
+
+
+.contacts-header__undertitle {
+   @extend .fonts;
+   line-height: 1.5;
+   color: $detail_color;
+   max-width: 179px;
+   margin-bottom: 25px;
+}
+
+.contacts-availability {
+   padding-top: 25px;
+   padding-bottom: 25px;
+   border-top: 1px solid #E1E1E1;
+   border-bottom: 1px solid #E1E1E1;
+}
+
+.contacts-address__list{
+   margin-top: 25px;
+}
+
+.contacts-address__link-telephone,
+.contacts-address__link-mail {
+   @extend .fonts;
+   line-height: 1.5;
+   color: $detail_color;
+}
+
+
+.contacts-button {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   text-align: center;
+   justify-content: center;
+   padding-bottom: 113px;
+}
+
+.contacts-button__locations {
+   background-color: $button-location_color;
+   border: none;
+   width: 161.5px;
+   height: 44px;
+   border-radius: 22px;
+   margin: 0 auto;
+   color: $bright_color;
+   font-family: 'DM Sans';
+   font-weight: $bold_weight;
+   font-size: 16px;
+   line-height: 1.3;
+   margin-bottom: 10px;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+}
+
+.contacts-button__franchise {
+   @extend .contacts-button__locations;
+   background-color: $bright_color;
+   color: $button-location_color;
+}
+
+.contacts-button__locations-ico {
+   width: 5px;
+   height: 10px;
 }
