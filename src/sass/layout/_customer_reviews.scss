@@ -1,13 +1,12 @@
 /* Slideshow container */
-.slideshow-container {
-    margin: auto;
+.customer-reviews {
   }
   .customer-reviews__picture {
     width: 85px;
-    margin: 80px auto 29px auto;
+    margin: 0 auto 29px auto;
   }
   /* Hide the images by default */
-  .mySlides {
+  .customer-reviews__item {
     display: none;
   }
   .customer-reviews__box {
@@ -34,35 +33,7 @@
     
     background-image: repeating-linear-gradient(0deg,#e1e1e1 0,#e1e1e1 1px,transparent 0,transparent 36px);
   }
-  .customer-reviews__dotline {
-    display: block;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: #c7133e;
-    margin: 30px auto 18px auto;
-    position: relative;
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      right: 10px;
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background: #c7133e;
-    }
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      left: 10px;
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background: #c7133e;
-    }
-  }
+  
   .customer-reviews__name {
     margin-top: 18px;
     margin-bottom: 30px;
