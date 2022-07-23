@@ -1,4 +1,4 @@
-  .section {
+.section {
   &__title {
     margin: 0;
     font-family: 'Titan One';
@@ -19,6 +19,10 @@
     margin-bottom: 15px;
     font-size: 18px;
     color: $label_color;
+  }
+  &--customer-reviews {
+    padding-bottom: 170px;
+    padding-top: 80px;
   }
 }
 
