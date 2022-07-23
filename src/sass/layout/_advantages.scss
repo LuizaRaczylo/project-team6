@@ -27,11 +27,8 @@
     margin-bottom: -38px;
   }
 
-  &__icon {
-    margin-bottom: 16px;
-  }
-
   &__value {
+    margin-top: 16px;
     margin-bottom: 16px;
   }
 
@@ -39,6 +36,18 @@
     padding-right: 50px;
     max-width: 230px;
     margin-bottom: 38px;
+  }
+
+  [data-alt-pseudo='milk']::before {
+    content: url(../images/advantages/advantages_milk.png);
+  }
+
+  [data-alt-pseudo='fruits']::before {
+    content: url(../images/advantages/advantages_fruits.png);
+  }
+
+  [data-alt-pseudo='heart']::before {
+    content: url(../images/advantages/advantages_heart.png);
   }
 }
 
@@ -52,8 +61,8 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
     }
-
     &__value {
+      margin-top: 36px;
       font-size: 48px;
       margin-bottom: 13px;
     }
@@ -77,11 +86,8 @@
       grid-template-columns: 1fr 1fr 1fr;
     }
 
-    &__icon {
-      margin-bottom: 40px;
-    }
-
     &__value {
+      margin-top: 40px;
       font-size: 58px;
       margin-bottom: 15px;
     }
