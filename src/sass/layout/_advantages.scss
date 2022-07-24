@@ -4,6 +4,12 @@
   padding-right: 50px;
   padding-bottom: 97px;
   background-color: $section-background_color;
+
+  &__container {
+    @extend .container;
+    width: 100%;
+    background-color: $section-background_color;
+  }
   &__header {
     display: none;
   }
@@ -81,6 +87,7 @@
     padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 139px;
+
     &__list {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;

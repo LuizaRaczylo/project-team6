@@ -1,0 +1,6 @@
+{
+  "name": "IceCream",
+  "icons": [
+    { "src": "/images/favicon/favicon.png", "type": "image/png", "sizes": "50x50" }
+  ]
+}
