@@ -32,7 +32,9 @@
     line-height: 2.58;
     position: relative;
     text-align: center;
-    background: repeating-linear-gradient(180deg,transparent,transparent 28px,$reviews-underline_color 0,$reviews-underline_color 29px)
+    background: repeating-linear-gradient(180deg,transparent,transparent 28px,$reviews-underline_color 0,$reviews-underline_color 29px);
+    padding-left: 7px;
+    padding-right: 16px;
   }
 
   &__name {
@@ -97,6 +99,9 @@
     &__text {
       font-size: 14px;
       line-height: 2.14;
+      letter-spacing: 0.04em;
+      padding-left: 20px;
+      padding-right: 44px;
     }
   }
 }
@@ -117,6 +122,8 @@
     &__text {
       font-size: 16px;
       line-height: 1.87;
+      padding-left: 28px;
+      padding-right: 35px;
     }
   }
 }
