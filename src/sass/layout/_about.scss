@@ -45,7 +45,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover {
+      background-color: $hover-button_bright;
+    }
   }
+
   &__button_icon {
     fill: none;
     stroke: $brand_color;
