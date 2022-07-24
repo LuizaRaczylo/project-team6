@@ -9,8 +9,8 @@
         font-size: 18px;
         line-height: 1.145;
         max-width: 223px;
-        color: $label_color;
-     }
+        color: $label_color; 
+     } 
 
      &__title {
         font-family: 'Titan One';
@@ -99,6 +99,11 @@
 
 
 @media (min-width: 768px)  {
+    
+    .container {
+        padding: 0 36px;
+    }
+    
     .footer-footer {
         height: 74px;
     
@@ -139,7 +144,7 @@
     }
 }
 
-@media (min-width: 1200px)  {
+@media (min-width: 1280px)  {
     .footer-footer {
         height: 45px;
     
@@ -148,5 +153,6 @@
             padding-top: 9px;
         }
     }
+
 
 }
