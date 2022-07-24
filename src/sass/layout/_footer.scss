@@ -43,7 +43,13 @@
     height: 32px;
     width: 32px;
     border-radius: 50%;
-    background-color: $label_color;;
+    background-color: $label_color;
+    cursor: poiner;
+
+    &:hover {
+        background-color: $button-location_color; 
+
+    }
 }
 
 .footer__icons-img {
@@ -74,11 +80,12 @@
 .footer-footer{
     height: 89px;
     background-color: $section-background_color;
+    border-top: 1px solid $reviews-underline_color;
 }
 
 .footer-footer__all-rights-reserved{
-    max-width: 150px;
-    margin:0 auto;
+    max-width: 140px;
+    margin:0 auto; 
     text-align: center;
     padding-top: 22px;
     font-family: 'DM Sans';
