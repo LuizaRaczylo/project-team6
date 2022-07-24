@@ -10,7 +10,7 @@
     color: $brand_color;
 
     &--products {
-      padding-bottom: 113px;
+      padding-bottom: 31px;
     }
   }
 
@@ -25,19 +25,45 @@
     padding-top: 80px;
   }
 }
-@media screen and (min-width: 768px) {
+
+@media (min-width: 768px) {
   .section {
-    &--customer-reviews {
+    &__title {
+      font-size: 48px;
+      line-height: 1.145;
+
+      &--products {
+        padding-bottom: 39px;
+      }
+      &--customer-reviews {
       padding-bottom: 197px;
       padding-top: 121px;
     }
+    }
+    &__subtitle {
+      margin-bottom: 16px;
+      font-size: 26px;
+    }
   }
 }
-@media screen and (min-width: 1280px) {
+
+@media (min-width: 1280px) {
   .section {
-    &--customer-reviews {
+    &__title {
+      font-size: 58px;
+      line-height: 1.137;
+
+      &--products {
+        padding-bottom: 49px;
+      }
+       &--customer-reviews {
       padding-bottom: 234px;
       padding-top: 123px;
+    }
+    }
+    &__subtitle {
+      margin-bottom: 15px;
+      font-size: 30px;
     }
   }
 }

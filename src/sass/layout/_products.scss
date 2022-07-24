@@ -1,36 +1,48 @@
 .products {
+    margin-bottom: 98px;
     &__undertitle {
         font-family: $brand_font;
         font-weight: 400;
         text-transform: uppercase;
         font-size: 18px;
+        line-height: 1.15;
         color: $label_color;
         text-align: center;
         margin-top: 121px;
         margin-bottom: 15px;
     }
     &__item {
-        height: 598px;
-        position: relative;
-        padding-top: 113px;
+        margin-bottom: 17px;
     }
     &__pic {
-        position: absolute;
-        top: -113px;
+        width: 100%;
+        margin-bottom: -139px;
     }
     &__area {
-        width: 100%;
-        height: 485px;
-        background-color: $ice-cream_color;
+        width: 100%;       
         border-radius: $contact_part;
         margin-bottom: 17px;
+        padding-bottom: 41px;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+            &--icecream {
+                background-color: $ice-cream_color;
+            }
+            &--icecoffe {
+                background-color: $ice-coffe_color;
+            }
+            &--milkshakes {
+                background-color: $milkshakes_color;
+            }
     }
     &__about {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 80px;
     }
     &__label {
         font-family: $brand_font;
@@ -41,7 +53,7 @@
         text-align: center;
         letter-spacing: 0.04em;
         line-height: 1.15;
-        margin-top: 30px;
+        margin-top: 90px;
     }
     &__text {
         font-family: $body_font;
@@ -50,6 +62,103 @@
         color: $bright_color;
         text-align: center;
         letter-spacing: 0.04em;
+        line-height: 1.5;
         padding: 0 44px;
+    }
+    &__dotline {
+        @extend .dotline;
+        height: 6px;
+        width: 6px;
+        background: $bright_color;
+        margin-bottom: 30px;
+                &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        right: 10px;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        background: $bright_color;
+                    }                
+                    &::after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        left: 10px;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        background: $bright_color;
+                    }
+    }
+    &__btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid $bright_color;
+        background: $bright_color;
+        margin-top: 30px;
+        cursor: pointer;
+            &:hover {
+                background: $hover-button_bright;
+            }
+    }
+    &__arrow {
+        height: 10px;
+        width: 10px;
+        fill: $brand_color;
+    }
+}
+
+@media(min-width: 768px) {
+    .products {
+        margin-bottom: 112px;
+            &__undertitle {
+                font-size: 26px;
+                line-height: 1.13;
+            }
+            &__list {
+                display: flex;
+                flex-basis: calc((100% - 40px) / 3);
+            }
+            &__item:not(:last-child) {
+                margin-right: 20px;
+            }
+            &__pic {
+                margin-bottom: -122px;
+            }
+            &__text {
+                line-height: 1.78;
+                padding: 0 11px;
+            }
+    }
+}
+
+@media(min-width: 1200px) {
+    .products {
+        margin-bottom: 119px;
+            &__undertitle {
+                font-size: 30px;
+                line-height: 1.15;
+            }
+            &__item {
+                flex-basis: calc((100% - 46px) /3);
+                    &:not(:last-child) {
+                        margin-right: 23px;
+                    }
+            }
+            &__pic {
+                margin-bottom: -125px;
+            }
+            &__label {
+                font-size: 30px;
+                line-height: 1.13;
+            }
+            &__text {
+                font-size: 16px;
+                line-height: 1.75;
+                padding: 0 44px;
+            }
     }
 }

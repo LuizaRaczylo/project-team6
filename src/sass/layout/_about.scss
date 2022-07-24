@@ -6,13 +6,6 @@
   background-size: auto 108px;
   background-repeat: no-repeat;
   background-position: left bottom 75px, right bottom 75px;
-  &__title {
-    @extend .section__title;
-  }
-
-  &__subtitle {
-    @extend .section__subtitle;
-  }
 
   &__header {
     margin: 0;
@@ -52,7 +45,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover {
+      background-color: $hover-button_bright;
+    }
   }
+
   &__button_icon {
     fill: none;
     stroke: $brand_color;
@@ -70,16 +67,6 @@
     background-image: none;
     padding-top: 130px;
 
-    &__title {
-      font-size: 48px;
-      margin-bottom: 100px;
-    }
-
-    &__subtitle {
-      font-size: 26px;
-      margin-bottom: 16px;
-    }
-
     &__header {
       font-size: 14px;
       line-height: 176%;
@@ -93,6 +80,7 @@
     }
 
     &__container {
+      margin-top: 100px;
       display: flex;
       justify-content: center;
     }
@@ -135,18 +123,9 @@
     }
 
     &__container {
+      margin-top: 106px;
       display: flex;
       justify-content: center;
-    }
-
-    &__title {
-      font-size: 58px;
-      margin-bottom: 106px;
-    }
-
-    &__subtitle {
-      font-size: 30px;
-      margin-bottom: 15px;
     }
 
     &__header {

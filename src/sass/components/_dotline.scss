@@ -3,28 +3,7 @@
     border-radius: $circle;
     margin: 0 auto;
     position: relative;
-        &--products {
-            width: 6px;
-            height: 6px;
-            color: $bright_color;
-            &::before {
-                content: "";
-                display: block;
-                position: absolute;
-                right: 10px;
-                border-radius: $circle;
-                background: currentColor;
-            }
-            &::after {
-                content: "";
-                display: block;
-                position: absolute;
-                left: 10px;
-                border-radius: $circle;
-                background: currentColor;
-            }
-        }
-        &--customer-reviews {
+        &--customer_reviews {
             width: 4px;
             height: 4px;
             background: $hover-button_color;
