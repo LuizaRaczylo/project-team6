@@ -139,7 +139,7 @@
       background-color: $hover-button_bright;      
                   }
                }
-
+ 
 
 .contacts-button__locations-ico,
 .contacts-button__franchise-ico {
@@ -148,4 +148,18 @@
    margin-left: 5px;
    stroke: $button-location_color;
    fill: $bright_color;
+}
+
+@media (min-width: 768px) {
+   .contacts-button {
+      display: block;
+   }
+
+   .contacts-button__locations {
+      margin-right: 14.5px;
+   }
+
+   .contacts-button__franchise {
+      margin-right: 0px;
+   }
 }
