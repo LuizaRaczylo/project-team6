@@ -8,10 +8,10 @@
     text-align: center;
     line-height: 1.15;
     color: $brand_color;
-    
-      &--products {
-        padding-bottom: 31px;
-      }
+
+    &--products {
+      padding-bottom: 31px;
+    }
   }
 
   &__subtitle {
@@ -26,28 +26,36 @@
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .section {
     &__title {
       font-size: 48px;
       line-height: 1.145;
 
-        &--products {
-          padding-bottom: 39px;
-        }
+      &--products {
+        padding-bottom: 39px;
+      }
+    }
+    &__subtitle {
+      margin-bottom: 16px;
+      font-size: 26px;
     }
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .section {
-      &__title {
-        font-size: 58px;
-        line-height: 1.137;
-        
-          &--products {
-            padding-bottom: 49px;
-          }
+    &__title {
+      font-size: 58px;
+      line-height: 1.137;
+
+      &--products {
+        padding-bottom: 49px;
       }
+    }
+    &__subtitle {
+      margin-bottom: 15px;
+      font-size: 30px;
+    }
   }
 }
