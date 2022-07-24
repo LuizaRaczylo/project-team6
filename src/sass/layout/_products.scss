@@ -36,6 +36,7 @@
                     background-image: url("../images/products/mobile/product1-mobile-249x252-1x.png");
                     background-repeat: no-repeat;
                     background-position: center;
+                    background-size: contain;
                     width: 100%;
                     min-height: 252px;
                     margin-top: -193px;
@@ -48,6 +49,7 @@
                             background-image: url("../images/products/mobile/product2-mobile-249x252-1x.png");
                             background-repeat: no-repeat;
                             background-position: center;
+                            background-size: contain;
                             width: 100%;
                             min-height: 252px;
                             margin-top: -193px;
@@ -60,6 +62,7 @@
                             background-image: url("../images/products/mobile/product3-mobile-249x252-1x.png");
                             background-repeat: no-repeat;
                             background-position: center;
+                            background-size: contain;
                             width: 100%;
                             min-height: 252px;
                             margin-top: -193px;
@@ -144,26 +147,17 @@
         &__about {
             &--icecream {
                     &::before {
-                        content: "";
-                        display: inline-block;
                         background-image: url("../images/products/mobile/product1-mobile-498x504@2x.png");
-                        background-size: contain;
                     }
                 }
             &--icecoffee {
                 &::before {
-                        content: "";
-                        display: inline-block;
                         background-image: url("../images/products/mobile/product2-mobile-498x504@2x.png");
-                        background-size: contain;
                     }
             }
             &--milkshakes {
                 &::before {
-                        content: "";
-                        display: inline-block;
                         background-image: url("../images/products/mobile/product3-mobile-498x504@2x.png");
-                        background-size: contain;
                     }
             }
             }
@@ -184,36 +178,21 @@
             &__about {
                         &--icecream {
                             &::before {
-                                content: "";
-                                display: inline-block;
                                 background-image: url("../images/products/tablet/product1-tablet-220x226-1x.png");
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                width: 100%;
                                 min-height: 226px;
                                 margin-top: -182px;
                             }
                         }
                         &--icecoffee {
                             &::before {
-                                    content: "";
-                                    display: inline-block;
                                     background-image: url("../images/products/tablet/product2-tablet-220x226-1x.png");
-                                    background-repeat: no-repeat;
-                                    background-position: center;
-                                    width: 100%;
                                     min-height: 226px;
                                     margin-top: -182px;
                                 }
                         }
                         &--milkshakes {
                             &::before {
-                                    content: "";
-                                    display: inline-block;
                                     background-image: url("../images/products/tablet/product3-tablet-220x226-1x.png");
-                                    background-repeat: no-repeat;
-                                    background-position: center;
-                                    width: 100%;
                                     min-height: 226px;
                                     margin-top: -182px;
                                 }
@@ -237,26 +216,17 @@
             &__about {
                 &--icecream {
                     &::before {
-                        content: "";
-                        display: inline-block;
                         background-image: url("../images/products/tablet/product1-tablet-440x452@2x.png");
-                        background-size: contain;
                     }
                 }
                 &--icecoffee {
                     &::before {
-                            content: "";
-                            display: inline-block;
                             background-image: url("../images/products/tablet/product2-tablet-440x452@2x.png");
-                            background-size: contain;
                         }
                 }
                 &--milkshakes {
                     &::before {
-                            content: "";
-                            display: inline-block;
                             background-image: url("../images/products/tablet/product3-tablet-440x452@2x.png");
-                            background-size: contain;
                         }
                 }
             }
@@ -275,36 +245,21 @@
                          &__about {
                              &--icecream {
                                  &::before {
-                                     content: "";
-                                     display: inline-block;
                                      background-image: url("../images/products/desktop/product1-desktop-335x335-1x.png");
-                                     background-repeat: no-repeat;
-                                     background-position: center;
-                                     width: 100%;
                                      min-height: 335px;
                                      margin-top: -290px;
                                  }
                              }
                              &--icecoffee {
                                 &::before {
-                                        content: "";
-                                        display: inline-block;
                                         background-image: url("../images/products/desktop/product2-desktop-335x335-1x.png");
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        width: 100%;
                                         min-height: 335px;
                                         margin-top: -290px;
                                     }
                              }
                              &--milkshakes {
                                 &::before {
-                                        content: "";
-                                        display: inline-block;
                                         background-image: url("../images/products/desktop/product3-desktop-335x335-1x.png");
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        width: 100%;
                                         min-height: 335px;
                                         margin-top: -290px;
                                     }
@@ -332,26 +287,17 @@
             &__about {
                 &--icecream {
                     &::before {
-                        content: "";
-                        display: inline-block;
                         background-image: url("../images/products/desktop/product1-desktop-670x670@2x.png");
-                        background-size: contain;
                     }
                 }
                 &--icecoffee {
                     &::before {
-                            content: "";
-                            display: inline-block;
                             background-image: url("../images/products/desktop/product2-desktop-670x670@2x.png");
-                            background-size: contain;
                 }
             }
             &--milkshakes {
                 &::before {
-                        content: "";
-                        display: inline-block;
                         background-image: url("../images/products/desktop/product3-desktop-670x670@2x.png");
-                        background-size: contain;
                     }
             }
         }
