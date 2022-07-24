@@ -35,6 +35,10 @@
       &--products {
         padding-bottom: 39px;
       }
+      &--customer-reviews {
+      padding-bottom: 197px;
+      padding-top: 121px;
+    }
     }
     &__subtitle {
       margin-bottom: 16px;
@@ -43,7 +47,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .section {
     &__title {
       font-size: 58px;
@@ -52,6 +56,10 @@
       &--products {
         padding-bottom: 49px;
       }
+       &--customer-reviews {
+      padding-bottom: 234px;
+      padding-top: 123px;
+    }
     }
     &__subtitle {
       margin-bottom: 15px;
