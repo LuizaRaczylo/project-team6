@@ -8,10 +8,10 @@
     text-align: center;
     line-height: 1.15;
     color: $brand_color;
-    
-      &--products {
-        padding-bottom: 113px;
-      }
+
+    &--products {
+      padding-bottom: 113px;
+    }
   }
 
   &__subtitle {
@@ -25,4 +25,19 @@
     padding-top: 80px;
   }
 }
-
+@media screen and (min-width: 768px) {
+  .section {
+    &--customer-reviews {
+      padding-bottom: 197px;
+      padding-top: 121px;
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section {
+    &--customer-reviews {
+      padding-bottom: 234px;
+      padding-top: 123px;
+    }
+  }
+}

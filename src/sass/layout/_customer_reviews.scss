@@ -10,10 +10,11 @@
     display: none;
   }
   .customer-reviews__box {
-    background-color: #FAFAFA;
+    background-color: $reviews_color;
     width: 100%;
     padding: 43px 50px 20px;
     position: relative;
+    margin-bottom: 30px;
   }
   .customer-reviews__icon {
     width: 54px;
@@ -26,12 +27,11 @@
   .customer-reviews__text {
     color: #000;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: $medium_weight;
     line-height: 2.58;
     position: relative;
     text-align: center;
-    
-    background-image: repeating-linear-gradient(0deg,#e1e1e1 0,#e1e1e1 1px,transparent 0,transparent 36px);
+    background: repeating-linear-gradient(transparent, transparent 30px, $reviews-underline_color 30px, $reviews-underline_color 31px);
   }
   
   .customer-reviews__name {
@@ -54,8 +54,14 @@
   
   .active, .dot:hover {
     background-color: #717171;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='icon-home' width='12' height='12' viewBox='0 0 32 32'%3E%3Cpath fill='%23d31342' d='M30.129 15.447c0.553-0.6 0.5-1.52-0.119-2.054l-13.636-11.77c-0.619-0.534-1.611-0.523-2.217 0.025l-13.682 12.372c-0.606 0.548-0.636 1.466-0.066 2.051l0.343 0.352c0.569 0.584 1.489 0.654 2.053 0.155l1.023-0.903v13.224c0 0.811 0.667 1.468 1.488 1.468h5.333c0.822 0 1.488-0.657 1.488-1.468v-9.252h6.803v9.252c-0.012 0.811 0.576 1.468 1.398 1.468h5.652c0.822 0 1.488-0.657 1.488-1.468v-13.038c0 0 0.282 0.244 0.631 0.546s1.078 0.060 1.631-0.541l0.388-0.42z'%3E%3C/path%3E%3C/svg%3E");
+    background-position: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
   }
-  
+  .customer-reviews__dots {
+    text-align: center;
+  }
   /* Fading animation */
   .fade {
     animation-name: fade;
@@ -66,3 +72,36 @@
     from {opacity: .4}
     to {opacity: 1}
   }
+
+  @media screen and (min-width: 768px) {
+    .customer-reviews {
+      padding: 0 74px;
+      &__box {
+        padding: 47px 36px 28px 60px;
+        margin-bottom: 24px;
+      }
+      &__picture {
+        margin: 0 auto 19px auto;
+      }
+      &__name {
+        margin-top: 14px;
+        margin-bottom: 35px;
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+    .customer-reviews {
+      padding: 0 177px;
+    &__box {
+      padding: 47px 54px 32px 59px;
+      margin-bottom: 15px;
+    }
+    &__picture {
+      margin: 0 auto 15px auto;
+    }
+    &__name {
+      margin-top: 34px;
+      margin-bottom: 35px;
+  }
+}
+}
