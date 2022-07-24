@@ -32,12 +32,7 @@
     line-height: 2.58;
     position: relative;
     text-align: center;
-    background: repeating-linear-gradient(
-      transparent,
-      transparent 30px,
-      $reviews-underline_color 30px,
-      $reviews-underline_color 31px
-    );
+    background: repeating-linear-gradient(180deg,transparent,transparent 28px,$reviews-underline_color 0,$reviews-underline_color 29px)
   }
 
   &__name {
