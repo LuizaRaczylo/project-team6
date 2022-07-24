@@ -5,6 +5,7 @@
         font-weight: 400;
         text-transform: uppercase;
         font-size: 18px;
+        line-height: 1.15;
         color: $label_color;
         text-align: center;
         margin-top: 121px;
@@ -61,6 +62,7 @@
         color: $bright_color;
         text-align: center;
         letter-spacing: 0.04em;
+        line-height: 1.5;
         padding: 0 44px;
     }
     &__dotline {
@@ -106,5 +108,57 @@
         height: 10px;
         width: 10px;
         fill: $brand_color;
+    }
+}
+
+@media(min-width: 768px) {
+    .products {
+        margin-bottom: 112px;
+            &__undertitle {
+                font-size: 26px;
+                line-height: 1.13;
+            }
+            &__list {
+                display: flex;
+                flex-basis: calc((100% - 40px) / 3);
+            }
+            &__item:not(:last-child) {
+                margin-right: 20px;
+            }
+            &__pic {
+                margin-bottom: -122px;
+            }
+            &__text {
+                line-height: 1.78;
+                padding: 0 11px;
+            }
+    }
+}
+
+@media(min-width: 1200px) {
+    .products {
+        margin-bottom: 119px;
+            &__undertitle {
+                font-size: 30px;
+                line-height: 1.15;
+            }
+            &__item {
+                flex-basis: calc((100% - 46px) /3);
+                    &:not(:last-child) {
+                        margin-right: 23px;
+                    }
+            }
+            &__pic {
+                margin-bottom: -125px;
+            }
+            &__label {
+                font-size: 30px;
+                line-height: 1.13;
+            }
+            &__text {
+                font-size: 16px;
+                line-height: 1.75;
+                padding: 0 44px;
+            }
     }
 }
