@@ -1,8 +1,8 @@
 .mobile-menu-container {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0px;
+  width: 250px;
   height: 100%;
   background-color: $menu-mobile_color;
   z-index: 999;
@@ -24,28 +24,11 @@
     position: absolute;
     top: 23px;
     right: 28px;
-
-    &:active,
-    &:focus,
-    &:hover {
-      fill: var(--brand-main-color);
-    }
   }
+}
 
-  &__list {
-    list-style-type: none;
-    margin-top: 19px;
-  }
-
-  &__item {
-    font-size: 16px;
-    line-height: 18px;
-    font-family: $body_font;
-    font-weight: $bold_weight;
-    color: $bright_color;
-    padding-top: 10px;
-    padding-bottom: 13px;
-    border-top: 1px solid #e18298;
-    border-bottom: 1px solid #e18298;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .mobile-menu-container {
+    width: 270px;
   }
 }

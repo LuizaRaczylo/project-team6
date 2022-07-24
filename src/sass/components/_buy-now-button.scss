@@ -17,9 +17,28 @@
   &--hidden {
     display: none;
   }
+
+  &:hover {
+    background-color: $hover-button_bright;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .buy-now-button {
+    width: 160px;
+    height: 44px;
+
+    &--tablet-width {
+      width: 186px;
+    }
+
+    &--hidden {
+      display: inline;
+    }
+  }
+}
+
+@media screen and (min-width: 1199px) {
   .buy-now-button {
     width: 160px;
     height: 44px;
