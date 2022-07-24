@@ -1,5 +1,20 @@
-# parcel-project-template
+![alt text](https://github.com/LuizaRaczylo/project-team6/blob/main/src/images/hero-header/mobile/logo@1x.png?raw=true) 
 
+IceCream site made by The Sixth Sense group
+
+## Team members
+Team Leader: 
+- Luiza Raczyło
+
+Scrum Master: 
+- Konrad Włodarczyk
+
+Developers:
+- Piotr Drechsler
+- Patrycja Lamik
+- Maciej Kalenicz
+
+# How to configure project?
 ## Zalezności
 
 Na komputerze musi być zainstalowana LTS-wersja [Node.js](https://nodejs.org/en/).
