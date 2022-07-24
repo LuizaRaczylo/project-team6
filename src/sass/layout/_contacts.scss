@@ -4,12 +4,11 @@
 
 .section-contacts {
    background-color: $section-background_color;
-   padding-top: 10;
 }
 
 .contacts {
    margin-top: -94px;
-}
+} 
 
 .contacts-container {
    background-color: $bright_color;
@@ -105,10 +104,9 @@
    padding-top: 34px;
 }
 
-.contacts-button__locations,
-.contacts-button__franchise  {
-   background-color: $bright_color;
-   color: $button-location_color;
+.contacts-button__locations {
+   background-color: $button-location_color;
+   color: $bright_color;
    border: none;
    width: 161.5px;
    height: 44px;
@@ -121,18 +119,27 @@
    margin-bottom: 10px;
    cursor: pointer;
 
-   
-   &:hover svg{
-      stroke: $bright_color;
-      fill: $button-location_color;              
+         & svg{
+         stroke: $bright_color;
+         fill: $button-location_color;              
+               }
+}
+
+.contacts-button__franchise {
+   @extend .contacts-button__locations ;
+   background-color: $bright_color;
+   color: $button-location_color;      
+
+      & svg{
+      stroke: $button-location_color;  
+      fill: $bright_color;           
+            }
+
+      &:hover {
+      background-color: $hover-button_bright;      
+                  }
                }
 
-   &:hover,
-   &:hover {
-      background-color: $button-location_color;
-      color: $bright_color;
-   }
-}
 
 .contacts-button__locations-ico,
 .contacts-button__franchise-ico {
