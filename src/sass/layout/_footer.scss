@@ -57,13 +57,13 @@
 .footer__icons-img {
     width: 18px;
     height: 18px;
+
+        &--telegram {
+        padding-right: 2px;
+    }
 }
 
-.footer__icons-img--telegram {
-    padding-right: 2px;
-}
-
-.footer-contacts {
+.footer-contacts { 
     font-family: 'DM Sans';
     font-weight: $bold_weight;
     font-size: 13px;
@@ -145,6 +145,11 @@
 }
 
 @media (min-width: 1280px)  {
+
+    .container {
+        padding: 0 115px;
+    }
+
     .footer-footer {
         height: 45px;
     
@@ -154,5 +159,16 @@
         }
     }
 
+    .footer {
+    
+        &__subtitle{
+            max-width: 100%;
+        }
 
+        &__title {
+            max-width: 100%;
+            margin-bottom: 97px;
+        }
+
+}
 }
