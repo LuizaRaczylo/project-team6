@@ -1,34 +1,101 @@
 .hero-header {
+  position: relative;
   height: 502px;
   background-color: $ice-cream_color;
 
+  /*------------ B A C K G R O U N D ----------*/
+  &__ice-cream-container {
+    position: absolute;
+    width: 171px;
+    height: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:before {
+      content: '';
+      width: 346px;
+      height: 344px;
+      background: $label_color;
+      border-radius: 50%;
+      position: absolute;
+      z-index: -1;
+      top: -9px;
+      transform: translateX(-25%);
+    }
+  }
+
+  /*------------ H E A D I N G ----------*/
   &__heading {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 6px;
-
-    &__buttons {
-      display: flex;
-      align-items: center;
-    }
+  }
+  /*------------ N A V I G A T I O N ----------*/
+  &__nav-list {
+    display: none;
+    list-style-type: none;
+    display: flex;
   }
 
+  &__nav-item {
+    display: none;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: $body_font;
+    font-weight: $bold_weight;
+    color: $bright_color;
+  }
+
+  /*------------ N A V I G A T I O N  M O B I L E // T A B L E T ----------*/
+  &__nav-list-mobie {
+    display: inline;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 19px;
+  }
+
+  &__nav-item-mobile {
+    display: inline;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: $body_font;
+    font-weight: $bold_weight;
+    color: $bright_color;
+    border-top: 1px solid #e18298;
+    border-bottom: 1px solid #e18298;
+    padding: 11px 0 11px 0;
+  }
+
+  /*------------ B U T T O N S ----------*/
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  /*------------ B U R G E R ----------*/
   &__burger-button {
     border: none;
     background: none;
     cursor: pointer;
   }
 
+  /*------------ C O N T E N T ----------*/
   &__content-container {
+    padding: 0 0 0 0;
     display: flex;
     justify-content: space-between;
   }
-
+  /*------------ F I R S T ----------*/
   &__first-content-container {
+    position: relative;
+    margin-top: 137px;
     margin-left: 20px;
   }
-
+  /*------------ T I T L E ----------*/
   &__title {
     font-family: $brand_font;
     font-weight: 400;
@@ -45,6 +112,7 @@
     }
   }
 
+  /*------------ B U T T O N S ----------*/
   &__buttons-container {
     padding-top: 19px;
     z-index: 2;
@@ -64,6 +132,10 @@
       width: 62px;
       color: #ffff;
       background-color: $brand_color;
+
+      &:hover {
+        background-color: $hover-button_color;
+      }
     }
 
     &--white-theme {
@@ -71,33 +143,24 @@
       color: $brand_color;
       background-color: $bright_color;
       margin-left: 10px;
+
+      &:hover {
+        background-color: $hover-button_bright;
+      }
     }
   }
 
+  /*------------ M I L K ----------*/
   &__milk-container {
     display: none;
   }
 
-  &__ice-cream-container {
-    position: absolute;
-    background-color: $label_color;
-    width: 346px;
-    height: 344px;
-    border-radius: $circle;
-    z-index: 1;
-    margin-top: 27px;
+  /*------------ S E C O N D ----------*/
+  &__second-content-container {
+    position: relative;
   }
 
-  &__ice-cream-image {
-    display: block;
-    margin: 0 auto;
-    padding-top: 9px;
-  }
-
-  &__girl-img {
-    display: none;
-  }
-
+  /*------------ N U M B E R S ----------*/
   &__numbers {
     display: none;
   }
@@ -105,26 +168,56 @@
   &__numbers-text {
     display: none;
   }
+
+  /*------------ G I R L ----------*/
+  &__girl-img {
+    display: none;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+/*------------ T A B L E T ----------*/
+@media screen and (min-width: 768px) and (max-width: 1280px) {
   .hero-header {
     height: 399px;
 
-    z-index: 2;
+    /*------------ B A C K G R O U N D ----------*/
+    &__ice-cream-container {
+      position: absolute;
+      width: 143px;
+      height: auto;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-30%);
 
+      &:before {
+        content: '';
+        width: 324px;
+        height: 322px;
+        background: $label_color;
+        border-radius: 50%;
+        position: absolute;
+        z-index: -1;
+        top: -30px;
+        transform: translateX(-18%);
+      }
+    }
+
+    /*------------ H E A D I N G ----------*/
     &__heading {
       padding: 37px 34px 0 34px;
     }
 
+    /*------------ B U R G E R ----------*/
     &__burger-button {
       margin-right: 30px;
     }
 
+    /*------------ F I R S T ----------*/
     &__first-content-container {
       margin: 15px 0 0 34px;
     }
 
+    /*------------ T I T L E ----------*/
     &__title {
       margin-top: 0px;
       font-size: 22px;
@@ -137,9 +230,10 @@
       }
     }
 
+    /*------------ M I L K ----------*/
     &__milk-container {
       display: flex;
-      padding-top: 15px;
+      margin-top: 15px;
     }
 
     &__milk-post {
@@ -156,10 +250,7 @@
       margin-top: 7px;
     }
 
-    &__ice-cream-container {
-      margin-left: 307px;
-    }
-
+    /*------------ S E C O N D ----------*/
     &__second-content-container {
       display: flex;
       flex-direction: column;
@@ -168,6 +259,7 @@
       margin-right: 34px;
     }
 
+    /*------------ N U M B E R S ----------*/
     &__numbers {
       position: relative;
       z-index: 2;
@@ -175,7 +267,6 @@
       font-size: 28px;
       font-family: $brand_font;
       color: $brand_color;
-      margin-right: 10px;
 
       &::after {
         content: '';
@@ -198,9 +289,9 @@
       color: $bright_color;
       line-height: 10px;
       margin-bottom: 14px;
-      margin-right: 10px;
     }
 
+    /*------------ G I R L ----------*/
     &__girl-img {
       display: inline;
       margin-top: 55px;
@@ -208,5 +299,199 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+/*------------ D E S K T O P ----------*/
+@media screen and (min-width: 1280px) {
+  .hero-header {
+    height: 665px;
+
+    /*------------ B A C K G R O U N D ----------*/
+    &__ice-cream-container {
+      position: absolute;
+      width: 236px;
+      height: auto;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-30%);
+
+      &:before {
+        content: '';
+        width: 538px;
+        height: 538px;
+        background: $label_color;
+        border-radius: 50%;
+        position: absolute;
+        z-index: -1;
+        top: -55px;
+        transform: translateX(-18%);
+      }
+    }
+
+    /*------------ H E A D I N G ----------*/
+    &__heading {
+      padding: 37px 115px 0 46px;
+    }
+
+    /*------------ N A V I G A T I O N ----------*/
+    &__nav-list {
+      display: inline;
+      list-style-type: none;
+      display: flex;
+    }
+
+    &__nav-item {
+      display: inline;
+      font-size: 16px;
+      line-height: 18px;
+      font-family: $body_font;
+      font-weight: $bold_weight;
+      color: $bright_color;
+      margin-right: 35px;
+
+      &--right {
+        margin-right: 0px;
+      }
+    }
+
+    /*------------ B U R G E R ----------*/
+    &__burger-button {
+      display: none;
+    }
+
+    /*------------ C O N T E N T ----------*/
+    &__content-container {
+      padding: 0 0 0 0;
+    }
+
+    /*------------ F I R S T ----------*/
+    &__first-content-container {
+      margin: 84px 0 0 77px;
+    }
+
+    /*------------ T I T L E ----------*/
+    &__title {
+      margin-left: 38px;
+      font-size: 38px;
+      line-height: 44px;
+      width: 277px;
+
+      &--big {
+        font-size: 58px;
+        line-height: 52px;
+      }
+    }
+
+    /*------------ B U T T O N S ----------*/
+    &__buttons-container {
+      margin-left: 38px;
+    }
+
+    &__button {
+      font-family: $body_font;
+      font-size: 14px;
+      border-radius: 20px;
+      height: 40px;
+      border: none;
+      background: none;
+      cursor: pointer;
+
+      &--pink-theme {
+        width: 104px;
+        color: #ffff;
+        background-color: $brand_color;
+      }
+
+      &--white-theme {
+        width: 138px;
+        color: $brand_color;
+        background-color: $bright_color;
+        margin-left: 10px;
+      }
+    }
+
+    /*------------ M I L K ----------*/
+    &__milk-container {
+      display: flex;
+      margin-top: 56px;
+    }
+
+    &__milk-post {
+      font-family: $body_font;
+      color: $bright_color;
+      font-size: 14px;
+      line-height: 140%;
+      font-weight: 400;
+      width: 200px;
+      margin-top: 56px;
+      margin-left: 30px;
+    }
+
+    &__milk-arrow-img {
+      margin-top: 20px;
+    }
+
+    &__milk-image {
+      width: 188px;
+    }
+
+    &__milk-post {
+      font-size: 14px;
+      line-height: 140%;
+      font-weight: 400;
+      width: 200px;
+      margin-top: 56px;
+    }
+
+    &__milk-arrow-img {
+      margin-top: 20px;
+      width: 26px;
+    }
+
+    /*------------ S E C O N D ----------*/
+    &__second-content-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: 78px;
+      margin-right: 115px;
+    }
+
+    /*------------ N U M B E R S ----------*/
+    &__numbers {
+      position: relative;
+      z-index: 2;
+      display: inline;
+      font-size: 36px;
+      font-family: $brand_font;
+      color: $brand_color;
+
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        left: 30px;
+        top: -10px;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: $circle;
+        background-color: $bright_color;
+      }
+    }
+
+    &__numbers-text {
+      display: inline;
+      font-size: 14px;
+      font-family: $body_font;
+      color: $bright_color;
+      line-height: 10px;
+      margin-bottom: 18px;
+    }
+
+    /*------------ G I R L ----------*/
+    &__girl-img {
+      display: inline;
+      width: 293px;
+      margin-top: 129px;
+    }
+  }
 }

@@ -1,7 +1,11 @@
 .section {
+  &--customer-reviews {
+    padding-bottom: 170px;
+    padding-top: 80px;
+  }
   &__title {
     margin: 0;
-    font-family: 'Titan One';
+    font-family: $brand_font;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 34px;
@@ -19,51 +23,57 @@
     margin-bottom: 15px;
     font-size: 18px;
     color: $label_color;
-  }
-  &--customer-reviews {
-    padding-bottom: 170px;
-    padding-top: 80px;
+    &--products {
+      margin-top: 121px;
+    }
   }
 }
 
 @media (min-width: 768px) {
   .section {
+    &--customer-reviews {
+      padding-bottom: 197px;
+      padding-top: 121px;
+    }
     &__title {
       font-size: 48px;
       line-height: 1.145;
 
       &--products {
-        padding-bottom: 39px;
+        padding-bottom: 20px;
       }
-      &--customer-reviews {
-      padding-bottom: 197px;
-      padding-top: 121px;
-    }
     }
     &__subtitle {
       margin-bottom: 16px;
       font-size: 26px;
+      line-height: 1.13;
+      &--products {
+        margin-top: 122px;
+      }
     }
   }
 }
 
 @media (min-width: 1280px) {
   .section {
-    &__title {
-      font-size: 58px;
-      line-height: 1.137;
-
-      &--products {
-        padding-bottom: 49px;
-      }
-       &--customer-reviews {
+    &--customer-reviews {
       padding-bottom: 234px;
       padding-top: 123px;
     }
+    &__title {
+      font-size: 58px;
+      line-height: 1.137;
+      &--products {
+        padding-bottom: 100px;
+      }
     }
     &__subtitle {
       margin-bottom: 15px;
       font-size: 30px;
+      line-height: 1.15;
+      &--products {
+        margin-top: 127px;
+      }
     }
   }
 }
