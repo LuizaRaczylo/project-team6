@@ -1,10 +1,12 @@
 .hero-header {
   position: relative;
+  overflow: hidden;
   height: 502px;
   background-color: $ice-cream_color;
 
   /*------------ B A C K G R O U N D ----------*/
   &__ice-cream-container {
+    margin-left: 47px;
     position: absolute;
     width: 171px;
     height: auto;
@@ -20,7 +22,7 @@
       border-radius: 50%;
       position: absolute;
       z-index: -1;
-      top: -9px;
+      bottom: 75px;
       transform: translateX(-25%);
     }
   }
@@ -47,6 +49,15 @@
     font-family: $body_font;
     font-weight: $bold_weight;
     color: $bright_color;
+  }
+
+  &__nav-link {
+    &:hover {
+      color: $brand_color;
+    }
+    &--active {
+      color: $brand_color;
+    }
   }
 
   /*------------ N A V I G A T I O N  M O B I L E // T A B L E T ----------*/
@@ -182,6 +193,7 @@
 
     /*------------ B A C K G R O U N D ----------*/
     &__ice-cream-container {
+      margin-left: 0;
       position: absolute;
       width: 143px;
       height: auto;
@@ -197,7 +209,7 @@
         border-radius: 50%;
         position: absolute;
         z-index: -1;
-        top: -30px;
+        bottom: 46px;
         transform: translateX(-18%);
       }
     }
@@ -237,6 +249,8 @@
     }
 
     &__milk-post {
+      display: flex;
+      flex-direction: column;
       font-family: $body_font;
       color: $bright_color;
       font-size: 8px;
@@ -246,8 +260,25 @@
       margin-top: 51px;
     }
 
-    &__milk-arrow-img {
+    &__milk-arrow-btn {
       margin-top: 7px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 1px solid $bright_color;
+      background: $bright_color;
+      cursor: pointer;
+      transition: 250ms;
+      &:hover {
+        background: $hover-button_bright;
+        border: 1px solid $hover-button_bright;
+      }
+    }
+    &__milk-arrow-img {
+      display: flex;
+      height: 5px;
+      width: 5px;
+      fill: $brand_color;
     }
 
     /*------------ S E C O N D ----------*/
@@ -306,6 +337,7 @@
 
     /*------------ B A C K G R O U N D ----------*/
     &__ice-cream-container {
+      margin-left: 0;
       position: absolute;
       width: 236px;
       height: auto;
@@ -321,7 +353,7 @@
         border-radius: 50%;
         position: absolute;
         z-index: -1;
-        top: -55px;
+        bottom: 75px;
         transform: translateX(-18%);
       }
     }
@@ -415,6 +447,8 @@
     }
 
     &__milk-post {
+      display: flex;
+      flex-direction: column;
       font-family: $body_font;
       color: $bright_color;
       font-size: 14px;
@@ -425,8 +459,25 @@
       margin-left: 30px;
     }
 
-    &__milk-arrow-img {
+    &__milk-arrow-btn {
       margin-top: 20px;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      border: 1px solid $bright_color;
+      background: $bright_color;
+      cursor: pointer;
+      transition: 250ms;
+      &:hover {
+        background: $hover-button_bright;
+        border: 1px solid $hover-button_bright;
+      }
+    }
+    &__milk-arrow-img {
+      display: flex;
+      height: 10px;
+      width: 10px;
+      fill: $brand_color;
     }
 
     &__milk-image {

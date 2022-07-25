@@ -14,15 +14,15 @@
   <!------------ H E A D I N G ---------->
   <div class="hero-header__heading container">
     <!------------ L O G O ---------->
-    <div class="hero-header__logo"><img src="images/hero-header/mobile/logo@1x.png" /></div>
+    <div class="hero-header__logo"><a href="index.html"><img src="images/hero-header/mobile/logo@1x.png"/></a></div>
     <!------------ N A V I G A T I O N ---------->
     <nav>
       <ul class="hero-header__nav-list">
-        <li class="hero-header__nav-item ">Home</li>
-        <li class="hero-header__nav-item">About us</li>
-        <li class="hero-header__nav-item">How it's made?</li>
-        <li class="hero-header__nav-item">Our products</li>
-        <li class="hero-header__nav-item hero-header__nav-item--right">Contact</li>
+        <li class="hero-header__nav-item"><a class="link hero-header__nav-link--active" href="index.html">Home</a></li>
+        <li class="hero-header__nav-item"><a class="hero-header__nav-link" href="#about">About us</a></li>
+        <li class="hero-header__nav-item"><a class="hero-header__nav-link" href="#about">How it's made?</a></li>
+        <li class="hero-header__nav-item"><a class="hero-header__nav-link" href="#products">Our products</a></li>
+        <li class="hero-header__nav-item hero-header__nav-item--right"><a class="hero-header__nav-link" href="#contact">Contact</a></li>
       <ul>
     </nav>
     <!------------ B U T T O N S ---------->
@@ -59,8 +59,8 @@
       </h1>
       <!------------ B U T T O N S ---------->
       <div class="hero-header__buttons-container">
-        <button class="hero-header__button hero-header__button--pink-theme">Products</button>
-        <button class="hero-header__button hero-header__button--white-theme">How it's made?</button>
+        <button class="hero-header__button hero-header__button--pink-theme"><a class="link" href="#products">Products</a></button>
+        <button class="hero-header__button hero-header__button--white-theme"><a href="#about">How it's made?</a></button>
       </div>
       <!------------ M I L K ---------->
       <div class="hero-header__milk-container">
@@ -73,13 +73,11 @@
           class="hero-header__milk-image"             
             />
         <p class="hero-header__milk-post">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          <img src="/images/hero-header/tablet/arrow-right-tablet@1x.png"
-               srcset="/images/hero-header/tablet/arrow-right-tablet@1x.png   18w,
-                       /images/hero-header/desktop/arrow-right-desktop@1x.png 26w          
-               "
-               sizes="(min-width: 1280px) 26px, (min-width: 768px) 18px" 
-               class="hero-header__milk-arrow-img"    
-          />
+          <button type="button" class="hero-header__milk-arrow-btn" href="">
+            <svg class="hero-header__milk-arrow-img">
+              <use href="./images/sprite/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
         </p>
       </div>
     </div>
@@ -115,11 +113,11 @@
       </svg>
     </button>
     <ul class="hero-header__nav-list-mobie">
-      <li class="hero-header__nav-item-mobile">Home</li>
-      <li class="hero-header__nav-item-mobile">About us</li>
-      <li class="hero-header__nav-item-mobile">How it's made?</li>
-      <li class="hero-header__nav-item-mobile">Our products</li>
-      <li class="hero-header__nav-item-mobile">Contact</li>
+      <li class="hero-header__nav-item-mobile"><a href="index.html">Home</a></li>
+      <li class="hero-header__nav-item-mobile"><a href="#about">About us</a></li>
+      <li class="hero-header__nav-item-mobile"><a href="#about">How it's made?</a></li>
+      <li class="hero-header__nav-item-mobile"><a href="#products">Our products</a></li>
+      <li class="hero-header__nav-item-mobile"><a href="#contact">Contact</a></li>
     </ul>
   </div>
 </header>
