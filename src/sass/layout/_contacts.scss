@@ -77,10 +77,6 @@
       &__time {
       @extend .fonts;
       color: $label_color;
-
-      &:not(:last-child)  {
-         margin-bottom: 10px;
-      }
    }
 }
 
