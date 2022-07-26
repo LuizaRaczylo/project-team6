@@ -54,7 +54,7 @@
     width: 32px;
     border-radius: 50%;
     background-color: $label_color;
-    cursor: poiner;
+    transition: 250ms;
 
     &:hover {
         background-color: $button-location_color; 
@@ -65,6 +65,7 @@
 .footer__icons-img {
     width: 18px;
     height: 18px;
+    cursor: poiner;
 
         &--telegram {
         padding-right: 2px;
@@ -146,7 +147,7 @@
         font-size: 14px;
     }
 
-    .container-footer-right {
+    .container-footer-right { 
         justify-content: flex-end;
         text-align: right;
         align-items: right;
