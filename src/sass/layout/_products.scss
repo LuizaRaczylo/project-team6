@@ -102,7 +102,7 @@
                         right: 10px;
                         width: 6px;
                         height: 6px;
-                        border-radius: 50%;
+                        border-radius: $circle;
                         background: $bright_color;
                     }                
                     &::after {
@@ -112,14 +112,14 @@
                         left: 10px;
                         width: 6px;
                         height: 6px;
-                        border-radius: 50%;
+                        border-radius: $circle;
                         background: $bright_color;
                     }
     }
     &__btn {
         width: 40px;
         height: 40px;
-        border-radius: 50%;
+        border-radius: $circle;
         border: 1px solid $bright_color;
         background: $bright_color;
         margin-top: 30px;
