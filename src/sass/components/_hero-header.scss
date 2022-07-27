@@ -474,9 +474,10 @@
       }
     }
     &__milk-arrow-img {
+      margin-left: 2px;
       display: flex;
-      height: 10px;
-      width: 10px;
+      height: 8px;
+      width: 8px;
       fill: $brand_color;
     }
 
@@ -490,11 +491,6 @@
       font-weight: 400;
       width: 200px;
       margin-top: 56px;
-    }
-
-    &__milk-arrow-img {
-      margin-top: 20px;
-      width: 26px;
     }
 
     /*------------ S E C O N D ----------*/
