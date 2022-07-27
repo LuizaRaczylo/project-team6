@@ -37,7 +37,7 @@
       color: $bright_color;
       padding-left: 28px;
       padding-right: 28px;
-   
+
          &--bg-cafe {
          background-color: $ice-coffe_color;
          border-radius: 4px;
@@ -246,6 +246,25 @@
 
 @media (min-width: 1280px) {
 
+   .section-contacts {
+      background-color: $section-background_color;
+      padding-top: 10px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 100%;
+      background-image: url("../images/contacts/bg-contacts-1280x382-1x.png");
+      background-position: top;
+   }
+
+      @media (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+   .section-contacts {
+      background-image: url("../images/contacts/bg-contacts-2560x764@2x.png");
+   }
+   }
+   
    .container-contacts {
       padding: 0 115px;
       justify-content:space-between;
